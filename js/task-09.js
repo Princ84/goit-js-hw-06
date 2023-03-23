@@ -5,14 +5,14 @@ function getRandomHexColor() {
 }
 
 const changeColorEl = document.querySelector(".change-color");
-const colorEl = document.querySelector;
-(".span.color");
+const colorEl = document.querySelector("span.color");
 const body = document.querySelector("body");
 changeColorEl = addEventListener("click", onChangeColor);
 
 function onChangeColor(elem){
   body.style.backgroundColor = getRandomHexColor();
   colorEl.innerHTML = getRandomHexColor();
+
 }
 
 // в консоле какая-то ошибка ,не могу понять 

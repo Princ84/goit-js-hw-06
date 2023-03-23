@@ -9,6 +9,11 @@ function handleSubmit(event) {
   if (email.value === "" || password.value === "") {
     return alert("Треба ввести  логін та пароль");
   }
-  console.log(`email: ${email.value}, Password: ${password.value}`);
+    const objUserElement = {
+      email: email.value,
+      password: password.value,
+    };
+  console.log("users:", objUserElement);
+
   event.currentTarget.reset();
 }
